@@ -12,3 +12,7 @@ function clearScreen() {
     console.log("it was calling...")
     document.getElementById("inp").value = "0";
 }
+function deleteLastChar() {
+    const display = document.getElementById("inp");
+    display.value = display.value.slice(0, -1);
+}
